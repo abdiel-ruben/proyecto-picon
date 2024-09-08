@@ -1,0 +1,138 @@
+
+.padre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 40px; /* Espacio adicional arriba y abajo en pantallas pequeñas */
+  box-sizing: border-box;
+}
+
+@media (max-height: 600px) {
+  .padre {
+    height: auto; /* Permite que el contenedor se ajuste */
+    min-height: 100vh; /* Mantiene el tamaño completo de la pantalla */
+    padding-top: 40px; /* Espacio adicional arriba */
+    padding-bottom: 40px; /* Espacio adicional abajo */
+  }
+}
+
+.tituloformulario {
+  font-size: 20px; /* Tamaño del texto */
+  color: rgba(0, 0, 0, 0.768);
+  font-family: Arial, Helvetica, sans-serif; /* Tipo de letra */
+  margin-top: 5px;
+  text-align: center; /* Centrar el texto horizontalmente */
+  font-weight: bold; /* Resaltar el texto */
+}
+
+
+/* Estilo de la imagen */
+.tamaño-imagen {
+  width: 100%;
+  height: 650px;
+  margin-top: 100px;
+}
+
+/* Ocultar la imagen en pantallas pequeñas (por ejemplo, con un ancho máximo de 768px) */
+@media (max-width: 768px) {
+  .tamaño-imagen {
+    display: none;
+  }
+
+  .padre {
+    flex-direction: column; /* Cambiar la dirección para apilar los elementos en vertical */
+    justify-content: center; /* Asegura que el formulario esté centrado verticalmente */
+  }
+}
+
+.estilo-profile {
+  border-radius: 60px;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cajatexto {
+  background-color: rgba(204, 202, 208, 0.307); /* Cambiar el color de fondo */
+  border-color: rgb(24, 236, 16); /* Cambiar el color del borde */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 100%; /* Ocupar todo el ancho */
+  padding: 10px; /* Espacio interno */
+  border-width: 0.5px;
+  margin-bottom: 20px;
+}
+.cajatexto:hover {
+  background-color: rgb(202, 209, 209); /* Nuevo color al pasar el mouse */
+}
+
+.cajatexto:focus { /* Resaltar el cuadro al hacer clic */
+  outline: 2px solid rgb(15, 223, 198);
+  box-shadow: 0 0 19px rgb(15, 223, 198);
+}
+
+.btnform {
+  background-color: rgba(60, 59, 59, 0.637);
+  border-color: rgb(11, 146, 18);
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  border-width: 0.5px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer; /* Cambia el cursor a una mano cuando pasas sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  margin-top: 15px; /* Espacio adicional encima del botón */
+}
+
+.btnform:hover {
+  background-color: rgb(4, 72, 68); /* Nuevo color al pasar el mouse */
+  color: rgb(245, 234, 18);
+}
+
+
+.texto {
+  font-size: 16px; /* Tamaño del texto */
+  color: rgba(0, 3, 6, 0.864);
+  font-family: Arial, Helvetica, sans-serif; /* Tipo de letra */
+  margin-top: 5px;
+  margin-bottom: 15px; /* Espacio adicional debajo del texto */
+  margin-left: 70px;
+  
+}
+
+.btnswicth {
+  background-color: rgba(60, 59, 59, 0.637);
+  border-radius: 10px;
+  padding: 6px;
+  border-width: 0px;
+  color: white;
+  font-size: 16px;
+  margin-top: 5px; /* Espacio adicional encima del botón */
+  margin-left: 20px;
+}
+
+.btnswicth:hover {
+  background-color: rgb(4, 72, 68); /* Nuevo color al pasar el mouse */
+  color: rgb(245, 234, 18);
+}
+
+.footerformulario{
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 15px; /* Espacio adicional encima del botón */
+}
+
+
+/* Ajustes para pantalla pequeña --------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  .texto {
+    margin-left: 45px;
+    
+  }
+}

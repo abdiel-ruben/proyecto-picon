@@ -1,0 +1,405 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+.header {
+    width: 100%;
+    background-color: #0B3D91;
+    border-bottom: 2px solid #ddd;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Asegura que el dropdown quede relativo al header */
+    z-index: 1;
+}
+
+.header-titulo {
+    background-color: #00000046;
+    color: white;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.header-top {
+    background-color: #a7e8f465;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    width: 100%;
+}
+
+.header-redes {
+    display: flex;
+    margin-left: 1%;
+}
+
+.header-icon {
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.header-icon:hover {
+    transform: scale(1.7);
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    height: 90px; /* Asegura una altura para evitar distorsiones */
+    transition: transform 0.3s ease;
+    transform-origin: left center; /* Establece el origen de la transformación en el lado derecho y el centro vertical */
+}
+
+.logo:hover {
+    transform: scale(2.2, 2.2); /* Escala la imagen solo en las direcciones izquierda, arriba y abajo */
+}
+
+.menu-container {
+    position: relative;
+    flex: 2;
+    z-index: 2; /* Asegura que el menú se superponga a otros elementos */
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.menu-button:hover {
+    color: #f9d805;
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Aparece justo debajo del botón */
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000; /* Alta prioridad para sobresalir */
+    width: 220px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    visibility: hidden;
+}
+
+.menu-container:hover .dropdown-menu,
+.menu-button:focus + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+}
+
+.dropdown-menu li {
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+    color: #007BFF;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 5;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 12px 0 0 12px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #007BFF;
+}
+
+.search-button {
+    background-color: #f4f4f4;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 12px 12px 0;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #c7ad05;
+}
+
+/* Icons */
+.header-icons {
+    display: flex;
+    align-items: center;
+    flex: 2;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 60%;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.btnsalir {
+    background-color: #0B3D91;
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 12px;
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+.btnsalir:hover {
+    background-color: #c7ad05;
+    color: black;
+}
+
+.icon {
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #007BFF;
+    transform: scale(1.5);
+}
+
+/* Contenido principal */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-titulo {
+    color: black;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.trends {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trend-item {
+    margin: 10px;
+    width: 180px;
+}
+
+.trend-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.trend-item img:hover {
+    transform: scale(1.2);
+}
+
+.trend-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Pie de página */
+.footer {
+    width: 100%;
+    background-color: #0B3D91;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    font-size: 14px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.footer-desarrollo{
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #7695cc, #325a9f, #7994c2, #325a9f, #7994c2); /* Degradado de color de azul a morado a naranja */
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    border: 6px double #c9da39; /* Borde alrededor de contacto */
+    border-radius: 30px 0px;
+}
+.footer-redes{
+    align-items: center;
+}
+.footer-redes-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+}
+
+.footer-redes-imagen a {
+    color: rgb(39, 37, 37);
+    display: flex;
+    flex-direction: column; /* Coloca el texto debajo de la imagen */
+    align-items: center; /* Centra horizontalmente el texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    margin: 8px; /* Espacio alrededor de cada enlace */
+    padding: 8px; /* Espacio dentro de cada enlace */
+    border: 3px double #e2ce57; /* Borde alrededor de cada enlace */
+    border-radius: 15px 0px;
+}
+
+.footer-redes-imagen a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+    color: yellow; /* Cambia el color del texto a amarillo al pasar el mouse */
+}
+
+.footer-redes-imagen p {
+    margin: 10px 0; /* Espacio entre la imagen y el texto */
+}
+/* Ajustes para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-top {
+        font-size: 14px;
+    }
+
+    .header-redes {
+        margin-left: 1%;
+    }
+
+    .header-icon {
+        margin-right: 7px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+    }
+
+    .header-icon:hover {
+        transform: scale(1.4);
+    }
+
+    .user-info {
+        margin-right: 20px;
+    }
+
+    .user-icon {
+        width: 35px;
+        height: 35px;
+        margin-left: 10%;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    .btnsalir {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 10px;
+        margin-left: 8px;
+        font-size: 14px;
+    }
+
+    .header-main {
+        padding: 5px 5px;
+    }
+    .logo {
+        height: 61px; /* Asegura una altura para evitar distorsiones */
+        transition: transform 0.3s ease;
+        transform-origin: left center; /* Establece el origen de la transformación en el lado derecho y el centro vertical */
+    }
+    
+    .logo:hover {
+        transform: scale(2, 2); /* Escala la imagen solo en las direcciones izquierda, arriba y abajo */
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .menu-container {
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        padding: 5px 5px;
+        border-radius: 12px 0 0 12px;
+    }
+
+    .search-button {
+        padding: 4px 4px;
+        border-radius: 0 12px 12px 0;
+    }
+
+    .header-icons {
+        justify-content: center;
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
+
+    .icon {
+        margin-left: 1px;
+    }
+}
