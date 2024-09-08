@@ -44,7 +44,7 @@ const login = () => {
                         <div className="card card-body shadow-lg">
                             <img src={Perfil} alt="perfil" className='estilo-profile' />
                             <p className='tituloformulario'>{registrando ? "REGISTRARSE" : "INICIAR SESIÓN"}</p>
-                            <p className='tituloformulario'>{registrando ? "Registrarse para ingresar al sistema" : "Inicia sesion con tu cuenta registrado"}</p>
+                            <p className='tituloformulario'>{registrando ? "Registrarse " : "Inicia sesion con tu cuenta registrado"}</p>
                             <form onSubmit={functAutenticacion}>
                                 <p>Ingresar Email :</p>
                                 <input type="text" placeholder='Ingresar email' className='cajatexto' id='email' />
