@@ -189,12 +189,16 @@
     align-items: center;
     margin-right: 20px;
 }
-
+.usuario-ingresado {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
 .user-icon {
     width: 40px;
     height: 40px;
-    margin-left: 60%;
-    margin-right: 10px;
+    margin-left: 180%;
+    margin-right: 5px;
     border-radius: 50%;
 }
 
@@ -206,8 +210,8 @@
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 12px;
-    margin-left: 8px;
     font-size: 18px;
+    margin-left: 10px;
 }
 
 .btnsalir:hover {
@@ -360,7 +364,7 @@
     }
     
     .logo:hover {
-        transform: scale(2.2, 2.2); /* Escala la imagen solo en las direcciones izquierda, arriba y abajo */
+        transform: scale(2.5, 2.5); /* Escala la imagen solo en las direcciones izquierda, arriba y abajo */
     }
 
     .menu-container {
@@ -397,10 +401,13 @@
         font-size: 20px;
         margin-left: 5px;
     }
+    .usuario-ingresado {
+        text-align: center;
+    }
     .user-icon {
         width: 30px;
         height: 30px;
-        margin-left: 3%;
+        margin-left: 10%;
         margin-right: 5px;
         border-radius: 50%;
     }
