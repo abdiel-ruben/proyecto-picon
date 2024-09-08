@@ -41,13 +41,15 @@ function Header({ correoUsuario }) {
               <img src={instagramIcon} alt="Instagram Icon" className="header-icon" />
             </a>
           </div>
-          <img src={userIcon} alt="User Icon" className="user-icon" />
-          <span>
-            <b>¡Me alegra que estés aquí !</b> {correoUsuario}
-          </span>
-          <button className="btnsalir" onClick={() => signOut(auth)}>
-            Salir
-          </button>
+          <div className='usuario-ingresado'>
+            <img src={userIcon} alt="User Icon" className="user-icon" />
+            <span>
+              <b>¡Me alegra que estés aquí !</b> {correoUsuario}
+            </span>
+            <button className="btnsalir" onClick={() => signOut(auth)}>
+              Salir
+            </button>
+          </div>
         </div>
       </div>
       <div className="header-main">

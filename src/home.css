@@ -400,20 +400,18 @@
     .user-icon {
         width: 30px;
         height: 30px;
-        margin-left: 5%;
-        margin-right: 10px;
+        margin-left: 3%;
+        margin-right: 5px;
         border-radius: 50%;
     }
     
     .btnsalir {
-        background-color: #0B3D91;
-        color: white;
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 2px;
         padding-bottom: 2px;
         border-radius: 12px;
-        margin-left: 4px;
+        margin-left: 2px;
         font-size: 13px;
     }
 
@@ -446,7 +444,7 @@
     .footer {
         width: 100%;
         text-align: center;
-        padding: 10px 5px; /* Adjust padding for smaller screens */
+        padding: 5px 5px; /* Adjust padding for smaller screens */
     }
 
     .footer-redes-imagen {
@@ -465,5 +463,8 @@
         padding: 2px; /* Espacio dentro de cada enlace */
         border: none; /* Borde alrededor de cada enlace */
         border-radius: none;
+    }
+    .footer-desarrollo{
+        border: 1px solid #c9da39; /* Borde alrededor de contacto */
     }
 }
