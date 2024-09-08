@@ -190,29 +190,35 @@
     margin-right: 20px;
 }
 .usuario-ingresado {
-    text-align: left;
+    background-color: #7695cc;
+    margin-left: 55%;
     display: flex;
     align-items: center;
+    justify-content: center; /* Alinea los elementos de forma equilibrada */
+    text-align: left;
+    padding: 8px; /* Añade un poco de padding para dar espacio */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border-radius: 6px;
 }
+
 .user-icon {
     width: 40px;
     height: 40px;
-    margin-left: 180%;
-    margin-right: 5px;
+    margin-right: 10px; /* Ajusta el margen para separar el icono del texto */
     border-radius: 50%;
 }
 
 .btnsalir {
     background-color: #0B3D91;
     color: white;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 8px 18px; /* Simplifica el padding */
     border-radius: 12px;
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    margin-left: 10px; /* Asegura una separación ligera entre el texto y el botón */
+    cursor: pointer; /* Añade un cursor de puntero para indicar que es clicable */
 }
+
+
 
 .btnsalir:hover {
     background-color: #c7ad05;
@@ -402,9 +408,15 @@
         margin-left: 5px;
     }
     .usuario-ingresado {
-        text-align: center;
-        display: center;
+        background-color: #7695cc;
+        margin-left: 2%;
+        display: flex;
         align-items: center;
+        justify-content: center; /* Alinea los elementos de forma equilibrada */
+        text-align: left;
+        padding: 8px; /* Añade un poco de padding para dar espacio */
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        border-radius: 6px;
     }
     .user-icon {
         width: 30px;
