@@ -403,11 +403,13 @@
     }
     .usuario-ingresado {
         text-align: center;
+        display: center;
+        align-items: center;
     }
     .user-icon {
         width: 30px;
         height: 30px;
-        margin-left: 10%;
+        margin-left: 3%;
         margin-right: 5px;
         border-radius: 50%;
     }
