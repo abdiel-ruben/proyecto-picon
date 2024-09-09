@@ -21,16 +21,16 @@ const login = () => {
         if (registrando) {
             try {
                 await createUserWithEmailAndPassword(auth, correo, contraseña);
-                toast.success('Usuario registrado con éxito!', { position: 'top-right', autoClose: 3000 });
+                toast.success('Usuario registrado con éxito!', { position: 'top-right', autoClose: 5000 });
             } catch (error) {
-                toast.error('Asegúrese que el correo este bien escrito y la contraseña tenga más de 8 caracteres', { position: 'top-right', autoClose: 5000 });
+                toast.error('Asegúrese que el correo este bien escrito y la contraseña tenga más de 8 caracteres. Si persiste el error intente con otro correo', { position: 'top-right', autoClose: 5000 });
             }
         } else {
             try {
                 await signInWithEmailAndPassword(auth, correo, contraseña);
-                toast.success('Inicio de sesión exitoso!', { position: 'top-right', autoClose: 3000 });
+                toast.success('Inicio de sesión exitoso!', { position: 'top-right', autoClose: 5000 });
             } catch (error) {
-                toast.error('El correo o la contraseña son incorrectos', { position: 'top-right', autoClose: 5000 });
+                toast.error('El correo o la contraseña son incorrectos. Recuerda si en caso ahun no esta registrado en el sistema registrese por favor.', { position: 'top-right', autoClose: 5000 });
             }
         }
     };
