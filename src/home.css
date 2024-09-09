@@ -331,33 +331,32 @@
     .header {
         flex-direction: column;
         align-items: center;
-        width: 100%; /* Asegura que el header ocupe todo el ancho */
+        width: 100%; /* Ensure the header spans the entire width */
     }
 
     .header-top {
         font-size: 14px;
         padding: 8px;
-        width: 100%; /* Asegura que la parte superior del header ocupe todo el ancho */
+        width: 100%; /* Ensure header top spans the full width */
     }
 
     .header-redes {
-        margin-left: 0;
-        justify-content: center; /* Centra los íconos de redes sociales */
-        width: 100%; /* Hace que los íconos ocupen el ancho completo en pantallas pequeñas */
+        margin-left: 0; /* Align the icons properly */
+        justify-content: center; /* Center the social icons */
     }
 
     .header-icon {
         margin-right: 7px;
-        width: 26px; /* Tamaño reducido para íconos en pantallas pequeñas */
+        width: 26px;
         height: 26px;
         border-radius: 50%;
     }
 
     .header-main {
-        flex-direction: column; /* Apila los elementos verticalmente */
+        flex-direction: column; /* Stack elements vertically */
         align-items: center;
         justify-content: center;
-        padding: 10px 5px;
+        padding: 10px 5px; /* Adjust padding */
     }
 
     .logo-container {
@@ -365,7 +364,13 @@
     }
 
     .logo {
-        height: 60px; /* Ajusta la altura del logo */
+        height: 60px; /* Asegura una altura para evitar distorsiones */
+        transition: transform 0.3s ease;
+        transform-origin: center; /* Establece el origen de la transformación en el lado derecho y el centro vertical */
+    }
+    
+    .logo:hover {
+        transform: scale(2.5, 2.5); /* Escala la imagen solo en las direcciones izquierda, arriba y abajo */
     }
 
     .menu-container {
@@ -374,7 +379,7 @@
     }
 
     .menu-button {
-        font-size: 18px;
+        font-size: 18px; /* Adjust menu button size */
     }
 
     .search-container {
@@ -384,7 +389,7 @@
     }
 
     .search-bar {
-        width: 80%;
+        width: 80%; /* Make the search bar take most of the width */
         padding: 5px;
     }
 
@@ -395,57 +400,112 @@
     .header-icons {
         justify-content: center;
         margin-top: 5px;
-        width: 100%;
+        width: 100%; /* Ensure icons are properly aligned */
     }
 
     .icon {
         font-size: 20px;
         margin-left: 5px;
     }
-
     .usuario-ingresado {
         background-color: #7695cc;
         margin-left: 1%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; /* Alinea los elementos de forma equilibrada */
         text-align: left;
-        padding: 8px;
-        width: 100%;
+        padding: 8px; /* Añade un poco de padding para dar espacio */
+        width: 100%; /* Ocupa todo el ancho del contenedor */
         border-radius: 6px;
     }
-
     .user-icon {
         width: 30px;
         height: 30px;
+        margin-left: 3%;
         margin-right: 5px;
         border-radius: 50%;
     }
-
+    
     .btnsalir {
-        padding: 5px 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         border-radius: 12px;
-        margin-left: 5px;
+        margin-left: 2px;
         font-size: 13px;
     }
-    
-    .dropdown-menu {
-        width: 100%; /* Hace que el menú desplegable ocupe el ancho completo */
-    }
 
-    /* Ajustes para otros elementos */
+    /* Main content adjustments */
     .main-content {
         padding: 10px;
         text-align: center;
     }
 
+    .main-titulo {
+        font-size: 24px; /* Adjust title size */
+    }
+
     .trends {
         flex-direction: column;
-        align-items: center; /* Centra los items de tendencias */
+        align-items: center; /* Center trend items */
     }
 
     .trend-item {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px; /* Make trend items responsive */
+        margin: 10px auto;
+    }
+
+    .trend-item img {
+        width: 100%; /* Ensure images take up the full width */
+    }
+
+    /* Footer adjustments */
+    .footer {
+        width: 100%;
+        text-align: center;
+        padding: 5px 5px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-redes-imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centra verticalmente la imagen y el texto */
+    }
+    
+    .footer-redes-imagen a {
+        color: rgb(39, 37, 37);
+        display: flex;
+        flex-direction: column; /* Coloca el texto debajo de la imagen */
+        align-items: center; /* Centra horizontalmente el texto */
+        text-decoration: none; /* Elimina el subrayado del enlace */
+        margin: 2px; /* Espacio alrededor de cada enlace */
+        padding: 2px; /* Espacio dentro de cada enlace */
+        border: none; /* Borde alrededor de cada enlace */
+        border-radius: none;
+    }
+    .footer-desarrollo{
+        border: 1px solid #c9da39; /* Borde alrededor de contacto */
     }
 }
+
+  
+  /* Modificaciones para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .user-info {
+      flex-direction: column; /* Cambia la dirección de los elementos para que se alineen en columna */
+      align-items: flex-start;
+    }
+  
+    .header-redes {
+      margin-top: 10px; /* Agrega un margen entre el usuario ingresado y las redes sociales */
+    }
+  
+    .usuario-ingresado { 
+      align-items: flex-start;
+      margin-top: 10px; 
+      padding: 5px;
+    }
+  }
+  
