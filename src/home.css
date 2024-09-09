@@ -409,7 +409,8 @@
     }
     .usuario-ingresado {
         background-color: #7695cc;
-        margin-left: 2%;
+        margin-left: 1%;
+        margin-right: 20%;
         display: flex;
         align-items: center;
         justify-content: center; /* Alinea los elementos de forma equilibrada */
