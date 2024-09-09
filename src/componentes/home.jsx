@@ -7,7 +7,7 @@ import Footer from '../componentes/Footer';
 import logoIcon from '../assets/icon.png';
 import fondoIcon from '../assets/fondo.avif';
 import imagenIcon from '../assets/icons/login.png';
-import videoBackground from '../assets/video/fondo-mimadre.mp4'; // Asegúrate de agregar el video en esta ruta
+import videoBackground from '../assets/video/videoanimacion.mp4'; // Asegúrate de agregar el video en esta ruta
 
 function Home({ correoUsuario }) {
   return (

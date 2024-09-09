@@ -3,8 +3,8 @@
 import React from 'react';
 import Header from '../componentes/Header';
 import Footer from '../componentes/Footer';
-import fondoIcon from '../assets/fondo.avif';
-import videoBackground from '../assets/video/fondo-mimadre.mp4'; // Asegúrate de agregar el video en esta ruta
+import logoIcon from '../assets/icon.png';
+import fondoanimacion from '../assets/video/fondo-animacion.mp4'; // agregar el video en esta ruta
 
 function DecoracionPinkoween({ correoUsuario }) {
   return (
@@ -14,16 +14,20 @@ function DecoracionPinkoween({ correoUsuario }) {
       {/* Video de fondo */}
       <div className="video-background">
         <video autoPlay loop muted playsInline>
-          <source src={videoBackground} type="video/mp4" />
+          <source src={fondoanimacion} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
       <main className="main-content">
-        <img src={fondoIcon} alt="Decoración Pinkoween" />
+        <img src={logoIcon} alt="Decoración Pinkoween" />
         <h2 className="main-titulo">CONTACTO</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus excepturi </p>
-
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio laborum harum iste sequi architecto. Sapiente quos natus consequuntur veniam neque illo delectus debitis maxime distinctio reiciendis! Doloremque fugit dolores aliquid? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat doloremque quam nulla atque. Magni enim obcaecati illo. Neque iusto voluptatum placeat? Qui asperiores facere dolore voluptas deserunt repudiandae unde!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio laborum harum iste sequi architecto. Sapiente quos natus consequuntur veniam neque illo delectus debitis maxime distinctio reiciendis! Doloremque fugit dolores aliquid? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat doloremque quam nulla atque. Magni enim obcaecati illo. Neque iusto voluptatum placeat? Qui asperiores facere dolore voluptas deserunt repudiandae unde!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio laborum harum iste sequi architecto. Sapiente quos natus consequuntur veniam neque illo delectus debitis maxime distinctio reiciendis! Doloremque fugit dolores aliquid? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat doloremque quam nulla atque. Magni enim obcaecati illo. Neque iusto voluptatum placeat? Qui asperiores facere dolore voluptas deserunt repudiandae unde!</p>
       </main>
       
       <Footer />
