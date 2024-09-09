@@ -331,32 +331,33 @@
     .header {
         flex-direction: column;
         align-items: center;
-        width: 100%; /* Ensure the header spans the entire width */
+        width: 100%; /* Asegura que el header ocupe todo el ancho */
     }
 
     .header-top {
         font-size: 14px;
         padding: 8px;
-        width: 100%; /* Ensure header top spans the full width */
+        width: 100%; /* Asegura que la parte superior del header ocupe todo el ancho */
     }
 
     .header-redes {
-        margin-left: 0; /* Align the icons properly */
-        justify-content: center; /* Center the social icons */
+        margin-left: 0;
+        justify-content: center; /* Centra los íconos de redes sociales */
+        width: 100%; /* Hace que los íconos ocupen el ancho completo en pantallas pequeñas */
     }
 
     .header-icon {
         margin-right: 7px;
-        width: 26px;
+        width: 26px; /* Tamaño reducido para íconos en pantallas pequeñas */
         height: 26px;
         border-radius: 50%;
     }
 
     .header-main {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column; /* Apila los elementos verticalmente */
         align-items: center;
         justify-content: center;
-        padding: 10px 5px; /* Adjust padding */
+        padding: 10px 5px;
     }
 
     .logo-container {
@@ -364,13 +365,7 @@
     }
 
     .logo {
-        height: 60px; /* Asegura una altura para evitar distorsiones */
-        transition: transform 0.3s ease;
-        transform-origin: center; /* Establece el origen de la transformación en el lado derecho y el centro vertical */
-    }
-    
-    .logo:hover {
-        transform: scale(2.5, 2.5); /* Escala la imagen solo en las direcciones izquierda, arriba y abajo */
+        height: 60px; /* Ajusta la altura del logo */
     }
 
     .menu-container {
@@ -379,7 +374,7 @@
     }
 
     .menu-button {
-        font-size: 18px; /* Adjust menu button size */
+        font-size: 18px;
     }
 
     .search-container {
@@ -389,7 +384,7 @@
     }
 
     .search-bar {
-        width: 80%; /* Make the search bar take most of the width */
+        width: 80%;
         padding: 5px;
     }
 
@@ -400,93 +395,57 @@
     .header-icons {
         justify-content: center;
         margin-top: 5px;
-        width: 100%; /* Ensure icons are properly aligned */
+        width: 100%;
     }
 
     .icon {
         font-size: 20px;
         margin-left: 5px;
     }
+
     .usuario-ingresado {
         background-color: #7695cc;
         margin-left: 1%;
-        margin-right: 20%;
         display: flex;
         align-items: center;
-        justify-content: center; /* Alinea los elementos de forma equilibrada */
+        justify-content: center;
         text-align: left;
-        padding: 8px; /* Añade un poco de padding para dar espacio */
-        width: 100%; /* Ocupa todo el ancho del contenedor */
+        padding: 8px;
+        width: 100%;
         border-radius: 6px;
     }
+
     .user-icon {
         width: 30px;
         height: 30px;
-        margin-left: 3%;
         margin-right: 5px;
         border-radius: 50%;
     }
-    
+
     .btnsalir {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding: 5px 10px;
         border-radius: 12px;
-        margin-left: 2px;
+        margin-left: 5px;
         font-size: 13px;
     }
+    
+    .dropdown-menu {
+        width: 100%; /* Hace que el menú desplegable ocupe el ancho completo */
+    }
 
-    /* Main content adjustments */
+    /* Ajustes para otros elementos */
     .main-content {
         padding: 10px;
         text-align: center;
     }
 
-    .main-titulo {
-        font-size: 24px; /* Adjust title size */
-    }
-
     .trends {
         flex-direction: column;
-        align-items: center; /* Center trend items */
+        align-items: center; /* Centra los items de tendencias */
     }
 
     .trend-item {
         width: 100%;
-        max-width: 280px; /* Make trend items responsive */
-        margin: 10px auto;
-    }
-
-    .trend-item img {
-        width: 100%; /* Ensure images take up the full width */
-    }
-
-    /* Footer adjustments */
-    .footer {
-        width: 100%;
-        text-align: center;
-        padding: 5px 5px; /* Adjust padding for smaller screens */
-    }
-
-    .footer-redes-imagen {
-        display: flex;
-        justify-content: center;
-        align-items: center; /* Centra verticalmente la imagen y el texto */
-    }
-    
-    .footer-redes-imagen a {
-        color: rgb(39, 37, 37);
-        display: flex;
-        flex-direction: column; /* Coloca el texto debajo de la imagen */
-        align-items: center; /* Centra horizontalmente el texto */
-        text-decoration: none; /* Elimina el subrayado del enlace */
-        margin: 2px; /* Espacio alrededor de cada enlace */
-        padding: 2px; /* Espacio dentro de cada enlace */
-        border: none; /* Borde alrededor de cada enlace */
-        border-radius: none;
-    }
-    .footer-desarrollo{
-        border: 1px solid #c9da39; /* Borde alrededor de contacto */
+        max-width: 300px;
     }
 }
