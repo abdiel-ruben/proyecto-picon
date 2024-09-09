@@ -47,9 +47,9 @@ const login = () => {
                             <p className='tituloformulario'>{registrando ? "Registrarse para ingresar al sistema" : "Inicia sesion con tu cuenta registrado"}</p>
                             <form onSubmit={functAutenticacion}>
                                 <p>Ingresar Email :</p>
-                                <input type="text" placeholder='Ingresar email' className='cajatexto' id='email' />
+                                <input type="text" placeholder='ejemplo@gmail.com' className='cajatexto' id='email' />
                                 <p>Ingresar Contraseña :</p>
-                                <input type="password" placeholder='Ingresar contraseña' className='cajatexto' id='password' />
+                                <input type="password" placeholder='Contraseña mas de 8 letras' className='cajatexto' id='password' />
                                 <button className='btnform'>{registrando ? "Registrate" : "Inicia sesión"}</button>
                             </form>
                             <h4 className='texto'>

@@ -28,7 +28,7 @@ function Header({ correoUsuario }) {
         </p>
         <div className="user-info">
           <div className="header-redes">
-            <a href="https://w.app/piconreyes">
+            <a href="https://wa.me/qr/2QRUCXL6DR5WF1">
               <img src={whatsappIcon} alt="WhatsApp Icon" className="header-icon" />
             </a>
             <a href="https://web.facebook.com/">

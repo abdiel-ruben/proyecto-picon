@@ -14,6 +14,14 @@ function DecoracionPinkoween({ correoUsuario }) {
         <img src={logoIcon} alt="Decoración Pinkoween" />
         <h2 className="main-titulo">Decoración Pinkoween</h2>
         <p>¡Explora nuestra exclusiva colección de decoración para un Halloween rosado y elegante!</p>
+
+        <img src={logoIcon} alt="Decoración Pinkoween" />
+        <h2 className="main-titulo">Decoración Pinkoween</h2>
+        <p>¡Explora nuestra exclusiva colección de decoración para un Halloween rosado y elegante!</p>
+
+        <img src={logoIcon} alt="Decoración Pinkoween" />
+        <h2 className="main-titulo">Decoración Pinkoween</h2>
+        <p>¡Explora nuestra exclusiva colección de decoración para un Halloween rosado y elegante!</p>
         {/* Agrega más contenido o imágenes aquí */}
       </main>
       
