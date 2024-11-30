@@ -38,16 +38,8 @@ function DecoracionPinkoween({ correoUsuario }) {
     <div className="app">
       <Header correoUsuario={correoUsuario} />
 
-      {/* Video de fondo */}
-      <div className="video-background">
-        <video autoPlay loop muted playsInline>
-          <source src={videoBackground} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
       <main className="main-content">
-        <h2 className="main-titulo">Decoración Pinkoween</h2>
+        <h2 className="main-titulo">Videos relacionados a .....</h2>
         <p>¡Explora nuestra exclusiva colección de decoración para un Halloween rosado y elegante!</p>
 
         {/* Lista de videos */}
