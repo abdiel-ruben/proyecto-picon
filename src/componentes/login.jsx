@@ -58,7 +58,6 @@ const login = () => {
                                     {registrando ? "Inicia sesión" : "Registrarme"}
                                 </button>
                             </h4>
-                            <p className='footerformulario'>¡ No te pierdas las últimas novedades... !</p>
                         </div>
                     </div>
                 </div>

@@ -9,15 +9,14 @@ import llamadaIcon from '../assets/icon-footer/llamada.png'
 function Footer() {
   return (
     <footer className="footer">
-      <h3>Comercial pppppppppppppppppppppp</h3>
+      <h3>Centro de reabilitacion</h3>
       <p>Contáctenos: 931 397 346 - 925 362 093</p>
       <p>Dirección: Plazuela Virgen del Carmen N° 269, Llata - Huamalíes - Huánuco</p>
       <p>&copy; 2024 Comercial Jhon Erick. Todos los derechos reservados.</p>
       
       <div className="footer-desarrollo">
         <div className="footer-redes">
-          <h6><b>DESARROLLADO POR: </b>ING. Picon Reyes Abdiel Ruben</h6>
-          <p>Si tienes alguna consulta no olvides de contactarme a través de mis redes sociales: </p>
+          <h6><b>Redes sociales: </b></h6>
           <div className="footer-redes-imagen">
             <a href="https://wa.me/qr/2QRUCXL6DR5WF1">
               <p><img src={whatsappIcon} alt="WhatsApp Icon" className="header-icon" />WhatsApp.</p>

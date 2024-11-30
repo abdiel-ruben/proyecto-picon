@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
+
 import React, { useState } from 'react';
 import appFirebase from '../credenciales';
 import { getAuth, signOut } from 'firebase/auth';
@@ -24,7 +23,7 @@ function Header({ correoUsuario }) {
     <header className="header">
       <div className="header-top">
         <p className="header-titulo">
-          HASTA -60 %: ¡compra las ofertas anticipadas de otoño en la aplicación! Se aplican condiciones.
+          Aqui encontraras una bariedad de cosas.
         </p>
         <div className="user-info">
           <div className="header-redes">
@@ -81,7 +80,7 @@ function Header({ correoUsuario }) {
         </div>
         <div className="search-container">
           <input type="text" className="search-bar" placeholder="Busca lo que se te ocurra" />
-          <button className="search-button">🔍</button>
+          <button className="search-button">  </button>
         </div>
         <div className="header-icons">
           <span className="icon">❤️</span>

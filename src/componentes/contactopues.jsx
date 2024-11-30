@@ -4,21 +4,12 @@ import React from 'react';
 import Header from '../componentes/Header';
 import Footer from '../componentes/Footer';
 import logoIcon from '../assets/icon.png';
-import fondoanimacion from '../assets/video/fondo-animacion.mp4'; // agregar el video en esta ruta
 
 function DecoracionPinkoween({ correoUsuario }) {
   return (
     <div className="app">
       <Header correoUsuario={correoUsuario} />
       
-      {/* Video de fondo */}
-      <div className="video-background">
-        <video autoPlay loop muted playsInline>
-          <source src={fondoanimacion} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
       <main className="main-content">
         <img src={logoIcon} alt="Decoración Pinkoween" />
         <h2 className="main-titulo">CONTACTO</h2>
