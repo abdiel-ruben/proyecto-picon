@@ -9,10 +9,10 @@ import llamadaIcon from '../assets/icon-footer/llamada.png'
 function Footer() {
   return (
     <footer className="footer">
-      <h3>Centro de reabilitacion</h3>
+      <h3>Centro de educacion y rehabilitacion de ciegos de Huanuco</h3>
       <p>Contáctenos: 931 397 346 - 925 362 093</p>
-      <p>Dirección: Plazuela Virgen del Carmen N° 269, Llata - Huamalíes - Huánuco</p>
-      <p>&copy; 2024 Comercial Jhon Erick. Todos los derechos reservados.</p>
+      <p>Av. Javier Heraud  Amarilis Huanuco</p>
+      <p>&copy; 2024 Todos los derechos reservados.</p>
       
       <div className="footer-desarrollo">
         <div className="footer-redes">

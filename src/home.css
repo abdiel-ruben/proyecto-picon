@@ -256,36 +256,32 @@
 .trends {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .trend-item {
     margin: 10px;
-    width: 180px;
+    width: 300px;
     border-radius: 15px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    background-color: #355e86; /* Fondo semitransparente */
+    border: 2px solid #050400; /* Borde de 2px de color amarillo */
 }
 
 .trend-item img {
     width: 100%;
     border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.trend-item img:hover {
-    transform: scale(1.1);
 }
 
 .trend-item p {
-    color: #e5ff00;
+    color: #ffffff;
     margin-top: 10px;
-    font-size: 19px;
+    font-size: 27px;
     transition: transform 0.3s ease;
 }
 .trend-item p:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Pie de página */

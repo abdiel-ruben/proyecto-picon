@@ -7,7 +7,7 @@ import whatsappIcon from '../assets/icons/whatsapp.jpg';
 import fasebookIcon from '../assets/icons/fasebook.jpg';
 import tiktokIcon from '../assets/icons/tiktok.jfif';
 import instagramIcon from '../assets/icons/instagram.jpg';
-import logooriginalIcon from '../assets/icons/logooriginal.png'; // Importa el logo correctamente
+import logooriginalIcon from '../assets/icons/logooriginal.jpg'; // Importa el logo correctamente
 import logoIcon from '../assets/icon.png'; // Importa el logo correctamente
 
 const auth = getAuth(appFirebase);

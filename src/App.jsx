@@ -11,6 +11,8 @@ import Login from '../src/componentes/login';
 import Home from '../src/componentes/home';
 import DecoracionPinkoween from '../src/componentes/DecoracionPinkoween';
 import Contactopues from '../src/componentes/contactopues'; // Nombre del componente capitalizado
+import Relatos from '../src/componentes/relatos'; // Nombre del componente capitalizado
+import Comentarios from '../src/componentes/Comentarios'; // Nombre del componente capitalizado
 
 import './App.css';
 
@@ -31,20 +33,28 @@ function App() {
       <Router>
         <Routes>
           {/* Ruta para la página principal */}
-          <Route 
-            path="/" 
-            element={usuario ? <Home correoUsuario={usuario.email} /> : <Login />} 
+          <Route
+            path="/"
+            element={usuario ? <Home correoUsuario={usuario.email} /> : <Login />}
           />
-          
+          <Route
+            path="/relatos-relatos"
+            element={<Relatos />} // Uso del nombre correcto
+          />
+          <Route
+            path="/comentarios-comentarios"
+            element={<Comentarios />} // Uso del nombre correcto
+          />
+
           {/* Ruta para la página de Decoración Pinkoween */}
-          <Route 
-            path="/decoracion-pinkoween" 
-            element={<DecoracionPinkoween />} 
+          <Route
+            path="/decoracion-pinkoween"
+            element={<DecoracionPinkoween />}
           />
-          
+
           {/* Ruta para la página de contacto */}
-          <Route 
-            path="/contacto-contacto" 
+          <Route
+            path="/contacto-contacto"
             element={<Contactopues />} // Uso del nombre correcto
           />
 
